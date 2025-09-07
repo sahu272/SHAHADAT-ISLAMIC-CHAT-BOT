@@ -27,8 +27,8 @@ module.exports.languages = {
 %5
 ╠═══════════════════════╣
 ║ 🌼 Prefix: %6
-║ 🌸 Bot Name: 𝐒𝐡𝐚𝐡𝐚𝐝𝐚𝐭 𝐈𝐬𝐥𝐚𝐦𝐢𝐜 𝐁𝐨𝐭
-║ 🍁 Owner: 𝐒𝐡𝐚𝐡𝐚𝐝𝐚𝐭 𝐈𝐬𝐥𝐚𝐦
+║ 🌸 Bot Name:𝐇𝐚𝐛𝐢𝐛 𝐈𝐬𝐥𝐚𝐦𝐢𝐜 𝐁𝐨𝐭
+║ 🍁 Owner: 𝐒𝐊 𝐇𝐀𝐁𝐈𝐁
 ╚═══════════════════════╝
 `
  }
@@ -36,10 +36,7 @@ module.exports.languages = {
 
 // ৪টি ইমগুর লিংক অ্যারে
 const imgLinks = [
- "https://i.imgur.com/sxSn1K3.jpeg",
- "https://i.imgur.com/8WvpgUL.jpeg",
- "https://i.imgur.com/3K5e9Vq.jpeg",
- "https://i.imgur.com/qeT5y2X.jpeg"
+ "https://i.imgur.com/bW3QHN5.jpeg"
 ];
 
 module.exports.handleEvent = function ({ api, event, getText }) {
@@ -83,10 +80,7 @@ module.exports.run = function ({ api, event, args, getText }) {
  const prefix = (threadSetting.hasOwnProperty("PREFIX")) ? threadSetting.PREFIX : global.config.PREFIX;
 
  const imgLinks = [
- "https://i.imgur.com/sxSn1K3.jpeg",
- "https://i.imgur.com/8WvpgUL.jpeg",
- "https://i.imgur.com/8WvpgUL.jpeg",
- "https://i.imgur.com/sxSn1K3.jpeg"
+ "https://i.imgur.com/bW3QHN5.jpeg"
  ];
 
  const imgPath = __dirname + "/cache/helppic.jpg";
@@ -122,8 +116,8 @@ module.exports.run = function ({ api, event, args, getText }) {
 ╠════════════════════════╣
 ${msg}╠════════════════════════╣
 ║ 🌼 Prefix: ${prefix}
-║ 🌸 Bot Name: 𝐒𝐡𝐚𝐡𝐚𝐝𝐚𝐭 𝐈𝐬𝐥𝐚𝐦𝐢𝐜 𝐁𝐨𝐭
-║ 🌺 Owner Name: 𝐒𝐡𝐚𝐡𝐚𝐝𝐚𝐭 𝐈𝐬𝐥𝐚𝐦
+║ 🌸 Bot Name: 𝐇𝐚𝐛𝐢𝐛 𝐈𝐬𝐥𝐚𝐦𝐢𝐜 𝐁𝐨𝐭
+║ 🌺 Owner Name: 𝐒𝐊 𝐇𝐀𝐁𝐈𝐁
 ╚═════════════════════════╝
 `;
 
