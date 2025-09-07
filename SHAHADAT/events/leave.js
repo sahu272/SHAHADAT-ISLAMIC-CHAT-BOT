@@ -29,8 +29,8 @@ module.exports.run = async function({ api, event, Users, Threads }) {
   const { join } =  global.nodemodule["path"];
   const { threadID } = event;
   const moment = require("moment-timezone");
-  const time = moment.tz("Asia/Dhaka").format("DD/MM/YYYY || HH:mm:s");
-  const hours = moment.tz("Asia/Dhaka").format("HH");
+  const time = moment.tz("Asia/Dellhi").format("DD/MM/YYYY || HH:mm:s");
+  const hours = moment.tz("Asia/Dellhi").format("HH");
   const data = global.data.threadData.get(parseInt(threadID)) || (await Threads.getData(threadID)).data;
   const name = global.data.userName.get(event.logMessageData.leftParticipantFbId) || await Users.getNameUser(event.logMessageData.leftParticipantFbId);
   const type = (event.author == event.logMessageData.leftParticipantFbId) ? "leave" : "managed";
