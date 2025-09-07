@@ -22,7 +22,7 @@ module.exports.run = async function ({ event, api, Threads, Users }) {
     try {
         let dataThread = (await getData(threadID)).threadInfo;
         switch (logMessageType) {
-            /*case "log:thread-admins": {
+            case "log:thread-admins": {
                 if (logMessageData.ADMIN_EVENT == "add_admin") {
                     dataThread.adminIDs.push({ id: logMessageData.TARGET_ID })
                     if (global.configModule[this.config.name].sendNoti) api.sendMessage(`[⚜️] Đã cập nhật người dùng ${logMessageData.TARGET_ID} trở thành quản trị viên nhóm`, threadID, async (error, info) => {
@@ -42,7 +42,7 @@ module.exports.run = async function ({ event, api, Threads, Users }) {
                     });
                 }
                 break;
-            }*/
+            }
 
             case "log:thread-admins": {
                 if (logMessageData.ADMIN_EVENT == "add_admin") {
